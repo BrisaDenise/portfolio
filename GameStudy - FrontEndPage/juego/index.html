@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../imagenes/favicon.ico">
+	<title>¡A jugar! ┊ GameStudy</title>
+
+
+	<!--Fuentes-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<!--Estilo-->
+	<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+
+	<!-- JavaScript -->
+	<script src="../codigo.js"></script>
+
+
+
+</head>
+<body>
+
+	<div id="contenedor" class="col-el-12 col-12">
+
+		<header>
+			
+			<div id="titulo" class="col-el-3 col-4">
+				<a href="../index.html"><img src="../imagenes/portada.png" alt="portada"></a>
+			</div>
+			
+			<nav>
+
+			<ul id="menu">
+				
+				<li><a href="../historia/index.html">Historia</a></li>
+				<li><a href="../consolas/index.html">Consolas</a>
+
+					<ul class="menu_desplegable">
+						<li><a href="../consolas/index.html#primera_generacion">Primera Generación</a></li>
+						<li><a href="../consolas/index.html#segunda_generacion">Segunda Generación</a></li>
+						<li><a href="../consolas/index.html#tercera_generacion">Tercera Generación</a></li>
+						<li><a href="../consolas/index.html#cuarta_generacion">Cuarta Generación</a></li>
+						<li><a href="../consolas/index.html#quinta_generacion">Quinta Generación</a></li>
+						<li><a href="../consolas/index.html#sexta_generacion">Sexta Generación</a></li>
+						<li><a href="../consolas/index.html#septima_generacion">Septima Generación</a></li>
+						<li><a href="../consolas/index.html#octava_generacion">Octava Generación</a></li>
+						<li><a href="../consolas/index.html#novena_generacion">Novena Generación</a></li>
+					</ul>
+				</li>	
+
+				<li><a href="../generos/index.html">Géneros</a>
+
+					<ul class="menu_desplegable">
+						<li><a href="../generos/index.html#accion">Acción</a></li>
+						<li><a href="../generos/index.html#disparos">Disparos</a></li>
+						<li><a href="../generos/index.html#estrategia">Estrategia</a></li>
+						<li><a href="../generos/index.html#simulacion">Simulación</a></li>
+						<li><a href="../generos/index.html#aventura">Aventura</a></li>
+						<li><a href="../generos/index.html#rol">Rol</a></li>
+					</ul>
+				</li>
+
+				<li><a href="../plataformas/index.html">Plataformas</a></li>	
+
+				<li><a href="../eventos/index.html">Eventos</a></li>
+				<li><a href="../informacion_adicional/index.html">Acerca de</a>
+
+					<ul class="menu_desplegable">
+						<li><a href="../informacion_adicional/index.html">Sobre mí</a></li>
+						<li><a href="../informacion_adicional/index.html#contato">Contacto</a></li>
+						<li><a href="../informacion_adicional/index.html#subscripcion">Subscripción</a></li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+			
+		</nav>
+
+		</header>
+		
+		
+
+		<main>
+
+			<h1>¡A JUGAR!</h1>
+
+			<section class="a_jugar col-el-8 col-8">
+
+				<p>¿Qué sería de una página de juegos sin juegos?</p>
+
+				<p>Es por eso que te he preparado una trivia, donde podrás demostrar cuanto sabes de videojuegos</p>
+
+				<p><strong>¿Te apuntas?</strong></p>
+
+			</section>
+
+			<section class="a_jugar col-el-8 col-8">
+				
+				<p>Bien, es muy sencillo. Estos pequeños corazoncitos <img src="imagenes/corazon.gif" alt="corazoncito" width="20px;"> son tus vidas. Tienes, tradicionalmente, tres. Te iré haciendo preguntas, algunas más sencillas y otras más complejas, y por cada que hagas bien, irás ganando estas conocidas estrellitas <img src="imagenes/estrellita.gif" alt="estrellita" width="15px;">. Pero si pierdes, tu corazón lucirá así <img src="imagenes/roto.gif" alt="roto" width="20px;">, perderás una vida. Si pierdes las tres, <strong>GAME OVER</strong>.</p>
+
+				<p><strong>¿Objetivo?</strong> Supongo que solo divertirse y ¡obtener la mayor decoración de estrellitas!</p>
+
+			</section>
+
+
+
+			<section class="a_jugar col-el-10 col-10">
+
+				<div>
+					<p>Tus vidas:</p>
+					<img src="imagenes/corazon.gif" alt="vida_1" id="vida_1"><img src="imagenes/corazon.gif" alt="vida_2" id="vida_2"><img src="imagenes/corazon.gif" alt="vida_3" id="vida_3">
+				</div>
+				
+
+
+
+
+
+				<div id="pregunta_0_">
+
+					<form name="pregunta_0" id="pregunta_0">
+						<label for="respuesta_0">¿Cuál fue el nombre del primer videojuego creado en la historia?</label>
+						<input type="text" name="respuesta_0" id="respuesta_0">
+					</form>
+					
+
+				</div>
+
+
+				<div id="pregunta_1_" class="ocultar">
+					
+					<form name="pregunta_1" id="pregunta_1">
+						<label for="respuesta_1">¿Cómo se llama el denominado <em>"Padre de los videojuegos"</em>?</label>
+						<input type="text" name="respuesta_1" id="respuesta_1">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_2_" class="ocultar">
+					
+					<form name="pregunta_2" id="pregunta_2">
+						<label for="respuesta_2">¿Quiénes protagonizaron la Guerra de consolas?</label>
+						<input type="text" name="respuesta_2" id="respuesta_2">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_3_" class="ocultar">
+					
+					<form name="pregunta_3" id="pregunta_1">
+						<label for="respuesta_3">¿En que país se festeja la convención más grande de videojuegos: <strong>GamesCom</strong>?</label>
+						<input type="text" name="respuesta_3" id="respuesta_3">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_4_" class="ocultar">
+					
+					<form name="pregunta_4" id="pregunta_4">
+						<label for="respuesta_4">¿Cuál fue la última consola que lanzó Atari en <strong>1993</strong>?</label>
+						<input type="text" name="respuesta_4" id="respuesta_4">
+					</form>
+
+				</div>
+
+
+
+				<div id="pregunta_5_" class="ocultar">
+					
+					<form name="pregunta_5" id="pregunta_5">
+						<label for="respuesta_5">¿Qué consola es denominada <em>"la más vendida en la historia"</em>?</label>
+						<input type="text" name="respuesta_5" id="respuesta_5">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_6_" class="ocultar">
+					
+					<form name="pregunta_6" id="pregunta_6">
+						<label for="respuesta_6">¿Qué juego es denominado <em>"el peor de la historia"</em>?</label>
+						<input type="text" name="respuesta_6" id="respuesta_6">
+					</form>
+
+				</div>
+
+
+
+				<div id="pregunta_7_" class="ocultar">
+					
+					<form name="pregunta_7" id="pregunta_7">
+						<label for="respuesta_7">¿A cuál consola de Nintendo destronó la Genesis de Sega? </label>
+						<input type="text" name="respuesta_7" id="respuesta_7">
+					</form>
+
+				</div>
+
+
+
+				<div id="pregunta_8_" class="ocultar">
+					
+					<form name="pregunta_8" id="pregunta_8">
+						<label for="respuesta_8">¿Con qué nombre se conoce al subgénero de Aventura basado en el "Point and click"?</label>
+						<input type="text" name="respuesta_8" id="respuesta_8">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_9_" class="ocultar">
+					
+					<form name="pregunta_9" id="pregunta_9">
+						<label for="respuesta_9">¿Qué plataformas es conocida por brindar juegos indies gratuitos?</label>
+						<input type="text" name="respuesta_9" id="respuesta_9">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_10_" class="ocultar">
+					
+					<form name="pregunta_11" id="pregunta_10">
+						<label for="respuesta_10">Existió una consola híbrida resultado de la GameCube y un reproductor de DVD, ¿cómo se llamaba?</label>
+						<input type="text" name="respuesta_10" id="respuesta_10">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_11_" class="ocultar">
+					
+					<form name="pregunta_11" id="pregunta_11">
+						<label for="respuesta_11">Se sabe poco nada de ella, sin embargo fue la primera consola en conectarse inalámbricamente a la televisión a través de una antena UHF.</label>
+						<input type="text" name="respuesta_11" id="respuesta_11">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_12_" class="ocultar">
+					
+					<form name="pregunta_12" id="pregunta_12">
+						<label for="respuesta_12">¿Qué consola lleva un nombre femenino y se la considera clon de las consolas ColecoVision y SegaSG-1000?</label>
+						<input type="text" name="respuesta_12" id="respuesta_12">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_13_" class="ocultar">
+					
+					<form name="pregunta_13" id="pregunta_13">
+						<label for="respuesta_13">¿En qué año se realizó el Videogame Rating Council, frente la presencia de juegos violentos saliendo a la luz?</label>
+						<input type="text" name="respuesta_13" id="respuesta_13">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_14_" class="ocultar">
+					
+					<form name="pregunta_14" id="pregunta_14">
+						<label for="respuesta_14">Antes de dedicarse a los videojuegos, ¿qué fabricaba Nintendo?</label>
+						<input type="text" name="respuesta_14" id="respuesta_14">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_15_" class="ocultar">
+					
+					<form name="pregunta_15" id="pregunta_16">
+						<label for="respuesta_15">¿Qué consola es definida como híbrida por permitir juegos tanto en televisión como en el dispositivo portátil?</label>
+						<input type="text" name="respuesta_15" id="respuesta_15">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_16_" class="ocultar">
+					
+					<form name="pregunta_16" id="pregunta_16">
+						<label for="respuesta_16">¿Cómo se denominan los juegos de Rol en los que se permiten a miles de jugadores introducirse en un mundo virtual de forma simultanea?</label>
+						<input type="text" name="respuesta_16" id="respuesta_16">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_17_" class="ocultar">
+					
+					<form name="pregunta_17" id="pregunta_17">
+						<label for="respuesta_17">Para los aficionados de Blizzard, existe una exposición específica para celebrar todas sus franquicias. ¿Cómo se llama?</label>
+						<input type="text" name="respuesta_17" id="respuesta_17">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_18_" class="ocultar">
+					
+					<form name="pregunta_18" id="pregunta_18">
+						<label for="respuesta_18">¿Cuál fue el evento que nació por la mano de Entertainment Software Association para disponer de un espacio enfocado a la industria de los videojuesgo?</label>
+						<input type="text" name="respuesta_18" id="respuesta_18">
+					</form>
+
+				</div>
+
+
+				<div id="pregunta_19_" class="ocultar">
+					
+					<form name="pregunta_19" id="pregunta_19">
+						<label for="respuesta_19">Y luego de tan largo camino, una fácil: ¿de qué juego son las estrellitas que has ganado?</label>
+						<input type="text" name="respuesta_19" id="respuesta_19">
+					</form>
+
+				</div>
+
+
+			
+
+				<button onclick="jugar()" id="ingresar_respuesta" class="centrar">¡Listo!</button>
+
+
+
+				<div id="mensaje" class="col-el-4 col-4 ocultar">
+				</div>
+
+				<button onclick="reintentar()" id="reintento" class="ocultar centrar">¡Reiniciar!</button>
+
+
+
+				<div id="casa" class="col-6 col-el-6" >
+					
+					<h3>Casita de estrellitas</h3>
+
+					<div>
+						<p id="casa_estrellitas"></p>
+					</div>
+
+				</div>
+
+
+
+
+
+				
+
+
+			</section>
+
+			
+			
+		</main>
+
+		<footer>
+
+			<ul>
+				<li><a href="../informacion_adicional/index.html">Acerca de</a></li>			
+				<li><a href="../informacion_adicional/index.html#contacto">Contacto</a></li>
+				<li><a href="../informacion_adicional/index.html#subscripcion">Subcripción</a></li>
+				<li><a href="#">¡A jugar!</a></li>
+			</ul>
+
+			<div class="datos">
+				<p id="codigo">GameStudy</p>
+				<p>© GameStudy 2021 - Todos los derechos reservados</p>
+				<p>Brisa León UNA ATAM</p>
+			</div>
+			
+		</footer>
+
+
+	</div>
+
+	<button id="volver"></button>
+
+</body>
+</html>

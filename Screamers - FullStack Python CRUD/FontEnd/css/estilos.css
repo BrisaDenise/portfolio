@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+@font-face {
+    font-family: 'bigShoulders';
+    src: url('../font/BigShouldersText-Thin.ttf');
+}
+
+
+
+body{
+    background-color: #28262F;
+    color: rgb(182, 182, 182);
+    font-family: Calibri;
+    margin-top: 30px;
+}
+
+main{
+    margin: 70px;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'bigShoulders';
+    text-transform:uppercase;
+}
+
+/*INICIO MAIN CONTACTO*/
+
+form{
+    background-color: rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.788);
+    padding: 30px;
+    padding-top: 5px;
+    border-radius: 2px;
+    
+}
+
+label{
+    display: block;
+    font-weight: lighter;
+    margin-top: 30px;
+    font-size:1.05em;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    background-color: inherit;
+    border-radius: 2px;
+    border: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.527);
+    color: white;
+    font-size:1.15em;
+    font-family: Calibri;
+    font-weight: 200;
+}
+
+input:focus, textarea:focus{
+    border-bottom: solid 1px rgb(255, 215, 36);
+    color: rgb(255, 215, 36);
+}
+
+input:disabled{
+    background-color: rgb(59, 58, 58);
+    color: rgba(255, 255, 255, 0.425);
+}
+
+button, a.modificar, a.hacia{
+    background: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-family: 'bigShoulders';
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 20%;
+}
+
+button:hover{
+    border-radius: 0px;
+    background-color:#3d7a5e;
+    color: #ffff;
+}
+
+::selection{
+    background-color: #28262F;
+    color: white;
+}
+
+
+table{
+    margin-top: 20px;
+    background-color:rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.788);
+    border-collapse: collapse;
+}
+
+table img{
+    width: 100%;
+}
+
+th{
+    font-weight: bolder;
+    background-color: #09070c;
+    padding: 10px;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+td{
+    padding: 20px;
+    text-align: justify;
+    
+    border-left : 1px solid rgba(245, 245, 245, 0.082);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.082);
+}
+
+.nuevo, a.hacia{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3d7a5e;
+    border: 1px solid #3d7a5e;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: 'bigShoulders';
+    transition: all 0.5s;
+}
+
+a.hacia{
+    background-color: rgb(134, 139, 65);
+    border: 1px solid rgb(134, 139, 65);
+    margin-left: 10px;
+}
+
+.nuevo:hover, a.hacia:hover{
+    border: 1px solid rgb(255, 215, 36);
+}
+
+table a{
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica;
+    font-size: 0.9em;
+}
+
+table a:hover{
+    color: rgb(255, 215, 36);
+}
+
+button.eliminar{
+    width: 100%;
+    color: white;
+    background-color: rgb(145, 50, 50);
+    border: 1px solid rgb(145, 50, 50);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button.eliminar:hover, a.modificar:hover{
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(255, 215, 36);
+}
+
+a.modificar{
+    width: 100%;
+    color: white;
+    margin-top: 0px;
+    background-color: rgb(55, 74, 114);
+    border: 1px solid rgb(55, 74, 114);
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+
+}
+

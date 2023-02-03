@@ -1,0 +1,1038 @@
+		
+
+		/*Responsive*/
+
+
+		* {
+		 	box-sizing: border-box;
+		}
+
+
+
+		/* Computadoras */
+
+		@media only screen and (min-width: 768px){
+
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+			#menu > li{float: left;}
+
+			.plataformas, .info_consola, header{display: flex;}
+
+			nav a {padding: 10px;}
+
+			.tipos_generos{display: inline-flex; width: 100%;}
+
+			.informacion{margin: 10px;}
+
+			.tipos_generos button, nav li:hover > ul {display: block;}
+
+			.celular{display: none;}
+
+			.mis_datos, nav{margin-left: 50px;}
+
+			article.pagina_principal {margin: 30px;}
+
+			.boton{margin: 20px;}
+
+			header.pagina_principal{height: 300px;}
+
+		}
+
+
+
+
+
+
+
+
+		/* Pantalla grande: de 1200px para arriba */
+		@media only screen and (min-width: 1200px) {
+			.col-el-1 {width: 8.33%;}
+			.col-el-2 {width: 16.66%;}
+			.col-el-3 {width: 25%;}
+			.col-el-4 {width: 33.33%;}
+			.col-el-5 {width: 41.66%;}
+			.col-el-6 {width: 50%;}
+			.col-el-7 {width: 58.33%;}
+			.col-el-8 {width: 66.66%;}
+			.col-el-9 {width: 75%;}
+			.col-el-10 {width: 83.33%;}
+			.col-el-11 {width: 91.66%;}
+			.col-el-12 {width: 100%;}	
+
+
+			nav {margin-left: 250px;}
+			nav a{padding: 10px 20px;}	
+				
+		}
+
+
+
+
+
+		/* Celular */
+
+		@media only screen and (max-width: 767px) {
+
+			[class*="col-"] {width: 100%;}
+
+
+
+
+			#titulo{margin: auto; align-content: center;align-items: center;}
+
+			nav ul li{margin-bottom: 10px;}
+
+			nav ul{padding-left: 0;}
+
+			.historia_orden img{padding: 20px;}
+
+			nav a{padding: 10px 20px;}
+
+			.historia img{width: 100%;}
+
+			.tipos_generos{margin: 20px}
+
+			.tipos_generos button{display: none;}
+
+			article.pagina_principal {margin: 30px 0;}
+
+			.boton{margin-top: 20px;}
+
+			header.pagina_principal{height: 100px;}
+
+
+		}
+
+		
+
+
+
+
+
+
+
+
+		/*General*/
+
+
+
+		#contenedor{
+			margin: auto;
+		}
+
+		body {
+			background-color: #1a1a1a;
+			color: white;
+			font-family: 'Gruppo';
+			margin: 0;
+		}
+
+		
+		header{
+			padding: 10px 50px;
+			padding-bottom: 60px;
+			background-image: linear-gradient(#595959,#1a1a1a);
+			background-color: rgba(89, 89, 89, 0.3);
+			color: black;
+		}
+
+
+		nav{
+			display: block;
+			margin-top: 30px;
+		}
+
+
+		nav ul li{
+			list-style: none;
+			font-size: 13px;
+			
+		}
+
+
+
+		div#titulo{
+			display: inline-block;
+
+		}
+
+		div#titulo a img:hover{
+			filter: brightness(110%);
+		}
+
+
+		nav a{
+			text-decoration: none;
+			color: white;
+			background-color: #1a1a1a;
+			
+			display: block;
+			margin: 5px;
+			box-shadow: 0 2px 1px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+			border-radius: 2px;
+		}
+
+
+
+
+		.menu_desplegable {
+			position: absolute;
+			display: none;
+			padding: 0;
+			background-color: #1a1a1a;
+			text-align: center;
+			min-width: 105px;
+			border-radius: 2px;
+			
+		}
+
+		
+
+		nav a:hover {
+			color: #ccff33;
+			background-color: black;
+			box-shadow: none;
+			text-decoration: underline;
+		}
+
+
+
+		a{
+			text-decoration: none;
+			color: unset;
+		}
+
+
+
+
+
+
+
+
+		/*Página Consolas*/
+
+		
+		section.categorias{
+			margin: 70px auto;
+			padding: 30px 30px;
+			color: #ccff33;
+		}
+
+
+
+
+		section:first-of-type{
+			margin-top: 0;
+		}
+
+
+		article.consolas{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 20px;
+
+		}
+
+
+		.cuadro{
+			width: 224px;
+			height: 150px;
+			border-radius: 5px;
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+			vertical-align: center;
+			align-items: center;
+			display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+
+
+		}
+
+
+		/*Fondo de cada cuadro*/
+
+		#magnavox1{background-image: url(consolas/imagenes/primera_gen/magnavox_odyssey/consola.jpg);}
+		#overkal{background-image: url(consolas/imagenes/primera_gen/overkal/consola.jpg);}
+		#videosport_mk2{background-image: url(consolas/imagenes/primera_gen/videosport_mk2/consola.jpg);}
+		#atari_pong{background-image: url(consolas/imagenes/primera_gen/atari_pong/consola.jpg);}
+		#odyssey_100{background-image: url(consolas/imagenes/primera_gen/odyssey100/consola.jpg);}
+		#odyssey_200{background-image: url(consolas/imagenes/primera_gen/odyssey200/consola.jpg);}
+		#tv_tennis_electrotennis{background-image: url(consolas/imagenes/primera_gen/tvtennis/consola.jpg);}
+
+		#atari_2600{background-image: url(consolas/imagenes/segunda_gen/atari_2600/consola.jpg);}
+		#magnavox2{background-image: url(consolas/imagenes/segunda_gen/odyssey2/consola.jpg);}
+		#intellivision{background-image: url(consolas/imagenes/segunda_gen/intellivision/consola.jpg);}
+		#vision8000{background-image: url(consolas/imagenes/segunda_gen/bandai_8000/consola.jpg);}
+		#atari_5200{background-image: url(consolas/imagenes/segunda_gen/atari_5200/consola.jpg);}
+		#colecovision{background-image: url(consolas/imagenes/segunda_gen/colecovision/consola.jpg);}
+
+		#nes{background-image: url(consolas/imagenes/tercera_gen/nes/consola.jpg);}
+		#master_system{background-image: url(consolas/imagenes/tercera_gen/master_system/consola.jpg);}
+		#atari_7800{background-image: url(consolas/imagenes/tercera_gen/atari_7800/consola.jpg);}
+		#dina{background-image: url(consolas/imagenes/tercera_gen/dina/consola.jpg);}
+		#action_max{background-image: url(consolas/imagenes/tercera_gen/action_max/consola.jpg);}
+		#dendy{background-image: url(consolas/imagenes/tercera_gen/dendy/consola.jpg);}
+
+		#pc_engine{background-image: url(consolas/imagenes/cuarta_gen/pc_engine/consola.jpg);}
+		#genesis{background-image: url(consolas/imagenes/cuarta_gen/genesis/consola.jpg);}
+		#game_boy{background-image: url(consolas/imagenes/cuarta_gen/game_boy/consola.jpg);}
+		#super_nintendo{background-image: url(consolas/imagenes/cuarta_gen/super_nintendo/consola.jpg);}
+		#neo_geo{background-image: url(consolas/imagenes/cuarta_gen/neo_geo/consola.jpg);}
+		#supervision{background-image: url(consolas/imagenes/cuarta_gen/supervision/consola.jpg);}
+
+		#jaguar{background-image: url(consolas/imagenes/quinta_gen/jaguar/consola.jpg);}
+		#saturn{background-image: url(consolas/imagenes/quinta_gen/saturn/consola.jpg);}
+		#ps{background-image: url(consolas/imagenes/quinta_gen/ps/consola.jpg);}
+		#playdia{background-image: url(consolas/imagenes/quinta_gen/playdia/consola.jpg);}
+		#virtual_boy{background-image: url(consolas/imagenes/quinta_gen/virtual_boy/consola.jpg);}
+		#nintendo64{background-image: url(consolas/imagenes/quinta_gen/nintendo64/consola.jpg);}
+
+		#dreamcast{background-image: url(consolas/imagenes/sexta_gen/dreamcast/consola.jpg);}
+		#ps2{background-image: url(consolas/imagenes/sexta_gen/ps2/consola.jpg);}
+		#xbox{background-image: url(consolas/imagenes/sexta_gen/xbox/consola.jpg);}
+		#gamecube{background-image: url(consolas/imagenes/sexta_gen/gamecube/consola.jpg);}
+		#panasonic_q{background-image: url(consolas/imagenes/sexta_gen/panasonic_q/consola.jpg);}
+
+		#psp{background-image: url(consolas/imagenes/septima_gen/psp/consola.jpg);}
+		#nintendo_ds{background-image: url(consolas/imagenes/septima_gen/nintendo_ds/consola.jpg);}
+		#xbox_360{background-image: url(consolas/imagenes/septima_gen/xbox_360/consola.jpg);}
+		#ps3{background-image: url(consolas/imagenes/septima_gen/ps3/consola.jpg);}
+		#wii{background-image: url(consolas/imagenes/septima_gen/wii/consola.jpg);}
+		#sega_zone{background-image: url(consolas/imagenes/septima_gen/sega_zone/consola.jpg);}
+
+		#psv{background-image: url(consolas/imagenes/octava_gen/playstation_vita/consola.jpg);}
+		#nintendo_3ds{background-image: url(consolas/imagenes/octava_gen/nintendo_3ds/consola.jpg);}
+		#wii_u{background-image: url(consolas/imagenes/octava_gen/wii_u/consola.jpg);}
+		#ps4{background-image: url(consolas/imagenes/octava_gen/playstation4/consola.jpg);}
+		#xbox_one{background-image: url(consolas/imagenes/octava_gen/xbox_one/consola.jpg);}
+		#nintendo_switch{background-image: url(consolas/imagenes/octava_gen/nintendo_switch/consola.jpg);}
+
+		#ps5{background-image: url(consolas/imagenes/novena_gen/playstation5/consola.jpg);}
+		#atari_vcs{background-image: url(consolas/imagenes/novena_gen/atari_vcs/consola.jpg);}
+		#xbox_x_s{background-image: url(consolas/imagenes/novena_gen/xbox_x_s/consola.jpg);}
+
+
+
+
+
+
+
+
+
+
+		.cuadro span.texto_cuadro{
+			display: none;
+		}
+
+		.cuadro:hover span.texto_cuadro {
+			display: block;
+			color: #ccff33;
+			width: 100%;
+			padding: 10px;
+			opacity: 80%;
+			background-color: #1a1a1a;
+		}
+
+		.cuadro:hover{
+			background-size: 130%;
+			background-position: center;
+		}
+	
+
+		.categorias h3{
+			padding: 10px;
+			margin-top: 0;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			width: 20%;
+			border-radius: 5px;
+			text-transform: uppercase;
+		}
+
+		h2{
+			margin-bottom: 30px;
+		}
+
+
+		.categorias p{
+			text-align: center;
+		}
+
+
+
+		footer ul{
+			list-style-type: none;
+			list-style-image: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding-left: 0;
+			
+		}
+
+
+		footer a{
+			text-decoration: none;
+			color: #ccff33;
+		}
+
+		footer ul, .datos{
+			background-color: rgba(89, 89, 89, 0.3);
+		}
+
+		footer ul li{
+			margin: auto 15px;
+			padding: 5px;
+			font-size: 13px;
+		}
+
+		footer ul li a:hover{
+			color: white;
+		}
+
+		footer p{
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 0;
+			font-size: 11px;
+		}
+
+		#codigo{
+			padding-top: 10px;
+			font-family: 'Libre Barcode 39'; 
+			font-size: 50px;
+		}
+
+		::selection{
+			background-color: white;
+			color: #1a1a1a;
+		}
+
+
+
+
+
+
+		/*Página de 1 consola*/
+
+
+		img{
+			border-radius: 5px;
+			max-width: 100%;
+		}
+
+		section.info_consola{
+			line-height: 24px;
+			align-items: center;
+			justify-content: center;
+			text-align: justify;
+			font-family: 'Lato';
+			padding: 20px;
+		}
+
+		.info_consola h4{
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		section.info_consola ul{
+			list-style-type: none;
+			text-align: center;
+			padding-left: 0;
+		}
+
+		.titulo_consola{
+			color: #ccff33;
+			text-align: right;
+		}
+
+
+		.centrar{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.volver{
+			margin: 50px;
+		}
+
+		.volver:hover > .flecha{
+			color: #ccff33;
+		}
+
+
+
+
+
+
+		/*Página Historia*/
+
+		.historia{
+			text-align: justify;
+			padding: 20px;
+		}
+
+		.historia_orden{
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+
+		.historia h2{
+			color: #ccff33;
+		}
+
+		.historia p{
+			font-family: 'Lato';
+			line-height: 1.8em;
+			text-indent: 1.5em;
+		}
+
+		.historia ul{
+			font-family: 'Lato';
+			line-height: 1.8em;
+			list-style-type: square;
+		}
+
+		.imagen div{
+			position: relative;
+			bottom: 31px;
+			padding: 3px 10px;
+			color: #ccff33;	
+			background-color: rgba(0,0,0,0.5);	
+			font-size: 12px;
+			margin: 0 10px;
+		}
+
+		.historia p a:hover, .informacion p a:hover, .info_consola a:hover{
+			color: #ccff33;
+		}
+
+
+		.derecha{
+			float: right;
+			margin-left: 20px;		
+		}
+
+
+		.izquierda{
+			float: left;
+			margin-right: 20px;
+		}
+
+
+
+		.clear{
+			clear: both;
+		}
+
+		.titulo_izquierda{
+			text-align: left;
+		}
+
+		.titulo_derecha{
+			text-align: right;
+		}
+
+
+
+
+
+
+
+
+		main > h1 {
+			text-align: center;
+			margin: 50px auto;
+			width: 70%;
+			border-bottom: 10px solid white;
+			padding-bottom: 50px;
+		}
+
+
+
+		/*PLATAFORMAS*/
+
+		.plataformas{
+			margin: auto;
+		}
+
+		.vinculo{
+			align-items: center;
+			align-content: center;
+			text-align: center;
+			margin: 10px;
+			padding: 20px;
+		}
+
+		.informacion{
+			text-align: justify;
+			padding: 20px;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+		.vinculo a img:hover {
+			filter: brightness(150%);
+		}
+
+		.vinculo a h4:hover{
+			text-shadow: 0 2px 5px #ccff33;
+		}
+
+
+
+
+		/*Generos*/
+
+		
+
+		.tipos h4, .principal h3{
+			text-align: center;
+			margin:5px;
+		}
+
+		.tipos img, .genero img{
+			display: block;
+			margin: 10px auto;
+		}
+
+		.tipos{
+			margin: 5px;
+			padding: 20px;
+			border-radius: 20px 20px 0 0;
+			border: 1px solid #ccff33;
+			flex-grow: 1;
+		}
+
+		.tipos_generos{
+			justify-content: center;
+		}
+
+		.genero{
+			border-radius: 5px;
+			padding: 15px;
+		}
+
+		div.genero{
+			background-color: rgba(89, 89, 89, 0.3);
+		}
+
+
+		.descripcion{
+			border-radius: 0 0 20px 20px;
+			background-color: rgba(214, 255, 41, 0.1);
+			padding: 20px 40px;
+			margin: 10px auto;
+		}
+
+		.general_genero p{
+			text-indent: 2em;
+			line-height: 20px;
+			text-align: justify;
+		}
+
+		.general_genero button, #volver{
+			background-color: unset;
+			border: none;
+			cursor: pointer;
+			margin: auto;
+		}
+
+		.general_genero{
+			margin: 50px auto;
+		}
+
+		.descripcion{
+			display: none;
+		}
+
+		#volver{
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			outline: none;
+			background: url(imagenes/volver.png);
+			width: 50px;
+			height: 50px;
+			display: block;
+		}
+
+		#volver:hover{
+			background: url(imagenes/volver_hover.png);
+		}
+
+
+		/*Mis datos*/
+
+		.mis_datos {
+			text-align: justify;
+			font-family: 'Lato';
+			padding: 20px;
+
+		}
+
+		.mis_datos ul{
+			text-decoration: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mis_datos hr{
+			margin: 30px auto;
+		}
+
+		.mis_datos h1{
+			background-color: rgba(89, 89, 89, 0.3);
+			padding: 40px;
+			border-bottom: 1px solid white;
+			margin-bottom: 30px;
+			border-radius: 20px 20px 0 0;
+		}
+
+
+
+		#contacto_form{
+			margin:30px auto;
+			border: 1px solid rgba(214, 255, 41, 0.7);
+			padding: 30px;
+		}
+
+
+		input, textarea, select, option{
+			display: block;
+			width: 100%;
+			border: none; 
+			margin: 20px auto;
+			padding: 15px;
+			font-family: 'Lato';
+		}
+
+		label{
+			display: block;
+			width: 100%;
+			border: none; 
+			margin: 15px auto;
+			font-family: 'Gruppo';
+			text-transform: uppercase;
+		}
+
+		#enviar{
+			width: 50%;
+			cursor: pointer;
+		}
+
+		#enviar:hover{
+			background-color: black;
+			color: #ccff33;
+		}
+
+		.agradecimiento img{
+			display: block;
+			margin: auto;
+		}
+
+		.agradecimiento{
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin: auto;
+			border: 1px dotted #ccff33;
+			padding: 20px;
+			border-radius: 10px; 
+			display: none;
+			width: 50%;
+		}
+
+
+		#contacto_form input:valid{
+			background-color: #ddffdd;
+		}
+
+		div.alerta{
+			font-size: 12px;
+			padding: 0 0 5px 5px;
+			color: rgb(255,166,162);
+			display: none;
+		}
+
+
+
+		#subscripcion_form{
+			margin: 50px auto;
+			padding: 10px 30px;
+			border-radius: 10px;
+			align-items: center;
+		}
+
+		#subscripcion_form input#correo_electronico{
+			color: #ccff33;
+			border-radius: 60px;
+		}
+
+		#subscripcion_form input#subscribirse{
+			background-color: #ccff33;
+			color: black;
+		}
+
+		#alerta_correo_subscripcion{
+			color: red;
+		}
+
+
+
+		/*GALERIAAA*/
+
+		
+
+		.contenedor_img_text{
+			display: none;
+
+			position: static;
+			max-height: 400px;
+		}
+
+		.imagenes_galeria{
+			
+
+			max-width: 900px;
+			max-height: 400px;
+			min-height: 120px;
+			overflow: hidden;
+
+			border-radius: 5px;
+		}
+
+		.imagenes_galeria img{
+  			width: 100%;
+  			height: 100%;
+  			object-position: center center;
+  			border-radius: 0;
+		}
+
+		.pie_imagen{
+			position: relative;
+			bottom: 50px;
+			padding: 2px 30px;
+			background-color: rgba(0, 0, 0, 0.8);
+			width: 95%;
+			text-align: right;
+			margin: auto;
+			font-size: 12px;
+			color: #ccff33;
+
+		}
+
+
+
+
+		#mostrar_1{
+			display: block;
+		}
+
+
+		#avanzar, #retroceder{
+			padding: 10px;
+			background-color: black;
+			cursor: pointer;
+			border-radius: 5px;
+			margin: 10px auto;
+			color: #ccff33;
+		}
+
+		.controles{
+			display: flex;
+		}
+
+		#avanzar:hover, #retroceder:hover {
+			background-color: #ccff33;
+			color: black;
+		}
+
+
+
+
+
+
+
+		/*Pagina principal*/
+
+		header.pagina_principal{
+			align-items: center;
+		}
+
+		#titulo_principal{
+			display: none;
+		}
+
+		section.pagina_principal{
+			text-align: center;
+			padding: 50px;
+			align-items: center;
+			justify-content: center;
+			display: none;
+		}
+
+		article.pagina_principal{
+			line-height: 30px;
+			font-size: 17px;
+			padding: 30px;
+			background-color: rgba(89, 89, 89, 0.3);
+			border-radius: 5px;
+			display: inline-block;
+		}
+
+		article.pagina_principal hr{
+			width: 50%;
+			border-color: #ccff33;
+		}
+
+		article.pagina_principal p{
+			font-family: 'Lato';
+			text-align: justify;
+		}
+
+
+		article.pagina_principal h3{
+			margin-top: 0;
+		}
+
+		article.franja{
+			background-color: rgba(89, 89, 89, 0.3);
+			margin: 50px auto;
+			padding: 10px;
+		}
+
+		a.boton{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			padding: 50px;
+			border-radius: 20px;
+		}
+
+		a.boton:hover{
+			box-shadow: inset 5px 5px 15px gray, inset 5px 5px 25px gray;
+		}
+
+
+
+		/*EVENTOS*/
+
+
+		.eventos h2{
+			color: #ccff33;
+		}
+
+		.eventos{
+			margin-top: 100px;
+			text-align: justify;
+			padding: 20px;
+		}
+
+		.eventos p, .eventos ul{
+			line-height: 1.5em;
+			font-family: 'Lato';
+			margin-top: 20px;
+		}
+
+		iframe{
+			width: 100%;
+		}
+
+		.video{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+
+		/*A jugar*/
+
+
+		.a_jugar{
+			margin: 40px auto;
+			text-align: center;
+			line-height: 25px;
+			background-color: rgba(89, 89, 89, 0.3);
+			padding: 30px;
+			border: 1px dotted #ccff33;
+			border-radius: 5px;
+		}
+
+
+		#casa{
+			margin: 30px auto;
+			background-color: black;
+			height: 300px;
+			border-radius: 5px;
+			align-items: center;
+			border: 1px dotted white;
+		}
+
+		#casa h3{
+			color: #ccff33;
+			padding: 20px;
+			margin-top: 0;
+			border: 1px solid #ccff33;
+		}
+
+		.ocultar{display: none;}
+
+		.a_jugar input{
+			width: 50%;
+			text-align: center;
+		}
+
+		.a_jugar button {
+			border: none;
+			background-color: white;
+			font-family: 'Gruppo';
+			padding: 10px;
+			color: #1a1a1a;
+			cursor: pointer;
+			border: 1px dotted #ccff33;
+		}
+
+		.a_jugar button:hover{
+			background-color: #ccff33;;
+			color: black;
+			border: 1px dotted white;
+
+		}
+
+		#casa_estrellitas{
+			width: 50%;
+			margin: auto;
+		}
+
+		#mensaje{
+			margin: 10px auto;
+			padding: 10px 25px;
+			font-size: 20px;
+			border: 2px dotted white;
+		}
+
